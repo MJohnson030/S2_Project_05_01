@@ -19,15 +19,15 @@ html {
 }
 
 body {
-    margin-left: auto;
-    margin-right: auto;
+    width: 95%;
     max-width: 640px;
     max-width: 960px;
-    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 100%;
 }
 
-header ul nav li a {
+header, ul, nav, li,a {
     box-sizing: border-box; 
 }
 
@@ -43,12 +43,13 @@ header ul nav li a {
 
 
 /* Page Header Styles */
-body header img {
+body>header>img {
+    display: block;
     width: 70%;
     float: left;
 }
 
-header nav {
+header>nav {
     float: left;
     padding-left: 2%;
     padding-right: 2%;
@@ -56,9 +57,10 @@ header nav {
   
 }
 
-header nav a {
+body>header>nav>ul>li {
     display: block;
     width: 100%;
+    margin-top: 5%;
 }
 
 
@@ -68,32 +70,33 @@ header nav a {
 /* Horizontal Navigation List Styles */
 nav.horizontal li {
     display: block;
-    width: 12.5;
+    width: 12.5%;
     float: left;
 }
 
 
 /* Topics Styles */
 ul#topics li {
+    display: block;
     width: 20%;
     float: left;
     margin-left: 0%;
-    margin-right: 1.5:
+    margin-right: 1.5%;
 }
 
-ul#topics li:first-of-type {
+ul#topics:first-of-type {
     margin-left: 7.75%;
 }
 
-ul#topics li:last-of-type {
+ul#topics:last-of-type {
     margin-right: 7.75%;
 }
 
 ul#topics li img {
+    display: block;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    display: block;
 }
 
 
@@ -110,21 +113,17 @@ hr {
 /* Customer Comment Styles */
 ul#comments {
     width: 75%;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto 40px auto;
 }
 
-li {
+ul#comments li {
     display: block;
     width: 50%;
     float: left;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-bottom: 30px;
 }
 
-li img {
+ul#comments li img {
     display: block;
     width: 20%;
     float: left;
@@ -133,6 +132,7 @@ li img {
 }
 
 ul#comments li p {
+    float: left;
     width: 70%;
     }
 
